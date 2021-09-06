@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.latest a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+.twitter {
+    a{
+        text-decoration: none;
+        color: #188CA6;
+    }
+
+    transition: background-color 0.2s;  
+}
+
+.rumour {
+    font-size: 16px;
+    color: #A68718;
+
+}
+
+.confirmed {
+    font-size: 16px;
+    color: #18A637;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ECE9E6;
+}
+
+
+header .upper-nav {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 3em 12.5%;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        transform: scale(0.95);
+
+        svg {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .right-upper-header {
+        display: flex;
+
+        .searchbar input{
+            margin-right: 3em;
+            border: none;
+            border-radius: 11px;
+            background: #DDDDDD;
+            width: 300px;
+            height: 44px;
+            padding-left: 3em;
+            padding-right: 1.3em;
+            color: rgb(20, 20, 20);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            transition: background 0.5s;
+
+
+            &:focus {
+                background: #d1d1d1;
+                outline: 0;
+            }
+
+            &::placeholder {
+                color: #a0a0a0;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                margin-top: 0.2em;
+                
+            }
+        }
+
+        .searchbar .search-icon {
+            position: absolute;
+            transform: scale(0.7);
+            margin-top: -2.2em;
+            margin-left: 0.5em;
+        }
+
+        .donate .donate-button {
+            border: 2px solid #18A637;
+            width: 146.23px;
+            height: 43.96px;
+            background-color: transparent;
+            color: #18A637;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: rgba(24, 166, 55, 0.08);
+            }
+            
+        }
+    }
+}
+
+header .lower-nav {
+    display: flex;
+    padding-left: 12.7%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    .link {
+        margin-right: 2em;
+        font-weight: 700;
+    }
+
+    .lol::before{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 9px;
+        border-radius: 200px;
+        background: #010101;
+        margin-left: 4.2em;
+        margin-top: 1.5em;
+    }
+
+    .more {
+        
+    color: rgba(163, 163, 163, 1);
+    text-decoration-line: line-through;
+
+    }
+}
+
+.main-section {
+    flex: nowrap;
+    display: flex;
+    margin: 2em 12.5%;
+    background-color: #CFD9DE;
+
+    .text-hero {
+        padding: 4.5em 3.5em;
+        flex: 50%;
+
+        .crowd-control {
+            font-family: 'Source Serif Pro', serif;
+            font-weight: 600;
+            font-size: 42px;
+        }
+
+        .dec {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            margin-top: 1.5em;
+        }
+        button {
+            margin-top: 2em;
+            cursor: pointer;
+        }
+
+        .latest {
+            margin-right: 2em;
+           border: none;
+           background: black;
+           color: white;
+           width: 150px;
+           height: 45px;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400; 
+        }
+
+        .twitter {
+            border: 2px solid #188CA6;
+            background-color: transparent;
+            width: 150px;
+            height: 45px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400; 
+            color: #188CA6;
+        }
+    }
+
+    .vector {
+        position: relative;
+        img {
+            position: absolute;
+            transform: scale(0.93);
+            right: -1em;
+            bottom: -1.1em;
+        }
+    }
+}
+
+.latest-articles {
+    margin: 2em 12.5%;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 23px;
+    font-weight: 600;
+
+    .card {
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 2em;
+        
+        .categorie-div {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+            margin-top: 1em;
+            transform: translateY(-110%);
+            }
+        }
+
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: -1em;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #969696;
+            font-weight: 500;
+        }
+
+        .btn {
+            padding: 0;
+            border-radius: unset;
+        }
+
+        .button {
+            bottom: 0;
+            margin-top: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 300;
+            p, svg {
+                margin: 0.5em 0.7em;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .main-section .text-hero {
+        text-align: center;
+    }
+    .main-section .vector{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 885px) {
+    .searchbar {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .main-section .text-hero .latest {
+       margin-right: unset;
+    }
+
+    .lower-nav {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-section .text-hero .crowd-control {
+        font-size: 35px;
+    }
+
+    .main-section .text-hero .dec {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .main-section .text-hero {
+        padding: 2.8em 2.5em;
+    }
+}
