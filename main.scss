@@ -160,19 +160,23 @@ header .lower-nav {
     flex: nowrap;
     display: flex;
     margin: 2em 12.5%;
-    background-color: #CFD9DE;
+    background: linear-gradient(180deg, #FFFFFF -114.55%, #DDDDDD 130%);
 
     .text-hero {
         padding: 4.5em 3.5em;
-        flex: 50%;
+        flex: 55%;
 
         .crowd-control {
-            font-family: 'Source Serif Pro', serif;
-            font-weight: 600;
-            font-size: 42px;
+            margin-top: 0.2em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 98%;
+            text-transform: uppercase;
         }
 
         .dec {
+            font-size: 16px;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
             margin-top: 1.5em;
@@ -203,16 +207,12 @@ header .lower-nav {
             color: #188CA6;
         }
     }
-
-    .vector {
-        position: relative;
-        img {
-            position: absolute;
-            transform: scale(0.93);
-            right: -1em;
-            bottom: -1.1em;
-        }
+    .img-crowd {
+        flex: 45%;
+        background: url(./img/back.png);
+        background-size: cover;
     }
+    
 }
 
 .latest-articles {
@@ -274,7 +274,7 @@ header .lower-nav {
     .main-section .text-hero {
         text-align: center;
     }
-    .main-section .vector{
+    .main-section .img-crowd{
         display: none;
     }
 }
