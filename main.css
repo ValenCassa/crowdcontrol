@@ -191,7 +191,6 @@ header .lower-nav .more {
 
 .main-section {
   position: relative;
-  z-index: -2;
   -webkit-box-flex: nowrap;
       -ms-flex: nowrap;
           flex: nowrap;
@@ -211,7 +210,6 @@ header .lower-nav .more {
 }
 
 .main-section .text-hero .crowd-control {
-  z-index: 2;
   margin-top: 0.2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;

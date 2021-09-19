@@ -158,7 +158,7 @@ header .lower-nav {
 
 .main-section {
     position: relative;
-    z-index: -2;
+    
     flex: nowrap;
     display: flex;
     margin: 2em 12.5%;
@@ -169,7 +169,7 @@ header .lower-nav {
         flex: 55%;
 
         .crowd-control {
-            z-index: 2;
+            
             margin-top: 0.2em;
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
@@ -190,6 +190,7 @@ header .lower-nav {
         }
 
         .latest {
+            
             margin-right: 2em;
            border: none;
            background: black;
@@ -201,6 +202,8 @@ header .lower-nav {
         }
 
         .twitter {
+           
+            
             border: 2px solid #188CA6;
             background-color: transparent;
             width: 150px;
