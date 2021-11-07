@@ -410,7 +410,7 @@ header .lower-nav .more {
   -webkit-box-flex: 45%;
       -ms-flex: 45%;
           flex: 45%;
-  background: url(/img/back.png);
+  background: url(/crowdcontrol/img/back.png);
   background-size: cover;
 }
 
