@@ -1,0 +1,572 @@
+@import 'variables/variables';
+@import 'components/accordion';
+@import 'components/mediaqueries';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.latest a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+.twitter {
+    a{
+        text-decoration: none;
+        color: #188CA6;
+    }
+
+    transition: background-color 0.2s;  
+}
+
+.rumour {
+    font-size: 16px;
+    color: #A68718;
+
+}
+
+.confirmed {
+    font-size: 16px;
+    color: #18A637;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+
+header .upper-nav {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 3em 12.5%;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        transform: scale(0.95);
+
+        svg {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .right-upper-header {
+        display: flex;
+
+        .searchbar input{
+            margin-right: 3em;
+            border: none;
+            border-radius: 11px;
+            background: #DDDDDD;
+            width: 300px;
+            height: 44px;
+            padding-left: 3em;
+            padding-right: 1.3em;
+            color: rgb(20, 20, 20);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            transition: background 0.5s;
+
+
+            &:focus {
+                background: #d1d1d1;
+                outline: 0;
+            }
+
+            &::placeholder {
+                color: #a0a0a0;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                margin-top: 0.2em;
+                
+            }
+        }
+
+        .searchbar .search-icon {
+            position: absolute;
+            transform: scale(0.7);
+            margin-top: -2.2em;
+            margin-left: 0.5em;
+        }
+
+        .donate .donate-button {
+            border: 2px solid #18A637;
+            width: 146.23px;
+            height: 43.96px;
+            background-color: transparent;
+            color: #18A637;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: rgba(24, 166, 55, 0.08);
+            }
+            
+        }
+    }
+}
+
+header .lower-nav {
+    display: flex;
+    padding-left: 12.7%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    .link {
+        margin-right: 2em;
+        font-weight: 700;
+    }
+
+    .lol::before{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 9px;
+        border-radius: 200px;
+        background: #010101;
+        margin-left: 4.2em;
+        margin-top: 1.5em;
+    }
+
+    .more {
+        
+    color: rgba(163, 163, 163, 1);
+    text-decoration-line: line-through;
+
+    }
+}
+
+.main-section {
+    position: relative;
+    
+    flex: nowrap;
+    display: flex;
+    margin: 2em 12.5%;
+    background: linear-gradient(180deg, #FFFFFF -114.55%, #DDDDDD 130%);
+
+    .text-hero {
+        padding: 4.5em 3.5em;
+        flex: 55%;
+
+        .crowd-control {
+            
+            margin-top: 0.2em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 98%;
+            text-transform: uppercase;
+        }
+
+        .dec {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            margin-top: 1.5em;
+        }
+        button {
+            margin-top: 2em;
+            cursor: pointer;
+        }
+
+        .latest {
+            
+            margin-right: 2em;
+           border: none;
+           background: black;
+           color: white;
+           width: 150px;
+           height: 45px;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400; 
+        }
+
+        .twitter {
+           
+            
+            border: 2px solid #188CA6;
+            background-color: transparent;
+            width: 150px;
+            height: 45px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400; 
+            color: #188CA6;
+        }
+    }
+    .img-crowd {
+        flex: 45%;
+        background: url(/img/back.png);
+        background-size: cover;
+    }
+    
+}
+
+.rosters {
+    margin: 2em 12.5%;
+
+    .txt-roster {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    .color {
+        margin-right: 1em;
+    }
+}
+
+.articles-text {
+    margin: 2em 12.5%;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+
+.cards-articles-wrapper {
+    
+    font-family: 'Poppins', sans-serif;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    .card {
+        transition: 0.4s transform;
+    }
+
+    .card-image {
+        img {
+            transform: translateY(4%);
+            border-radius: 4px 4px 0px 0px;
+            width: 430px;
+            height: 197px;
+            object-fit: cover;
+        }
+
+        .second-image {
+            img {
+                transform: translateX(10%);
+            }
+        }
+        
+    }
+
+    .card-wrapper {
+        
+        z-index: 1;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        background-color: white;
+        width: 430px;
+        padding: 1.5em;
+        height: 157px;
+
+        .number {
+            position: absolute;
+            right: 8%;
+            top:-20%; 
+            font-size: 150px;
+            color: #E9E9E9;;
+        }
+        a {
+            text-decoration: none;
+        }
+        .btn-wrapper {
+
+            z-index: 3;
+            margin-top: 0.5em;
+            background: #E9E9E9;;
+            border-radius: 0px 0px 4px 4px;
+            width: 250px;
+            height: 32px;
+            cursor: pointer;
+            
+            .border {
+                display: none;
+                position: absolute;
+                z-index: -1;
+                margin-top: -0.1em;
+                margin-left: -0.2em;
+                width: 256px;
+                height: 37px;
+                border-radius: 4px;
+                overflow: hidden;
+                background: linear-gradient(to right, white 20%, white 40%, #91cdf0 50%, #91cdf0 55%, white 70%, white 100%);
+                background-size: 200% auto;
+                animation: shine 2.2s linear infinite;
+            }
+
+
+            .content {
+                font-size: 14px;
+                padding: 0.5em 0.3em 0.5em 0.8em;
+                display: flex;
+                height: 98%;
+                width: 98%;
+                justify-content: space-between;
+
+                .twitter_logo {
+                    margin-top: -0.1em;
+                }
+            }
+        }
+
+
+
+    }
+
+    .rumour {
+        background-color: white;
+
+        .content {
+            color: #B7B7B7;
+        }
+
+
+    }
+
+    .confirmed {
+        background-color: #2D2D2D;
+
+
+
+        .content {
+            color: #B7B7B7;
+        }
+
+        .number {
+            color: #232323;
+        }
+
+        .btn-wrapper {
+            background-color: #232323;
+
+            .border {
+                display: none;
+                position: absolute;
+                z-index: -1;
+                margin-top: -0.1em;
+                margin-left: -0.2em;
+                width: 256px;
+                height: 37px;
+                border-radius: 4px;
+                overflow: hidden;
+                background: linear-gradient(to right, #232323 20%, #232323 40%, #91cdf0 50%, #91cdf0 55%, #232323 70%, #232323 100%);
+                background-size: 200% auto;
+                animation: shine 2.2s linear infinite;
+            }
+
+        }
+        
+
+    }
+
+    .official {
+        background: linear-gradient(153.77deg, #1C626C -9.67%, #0E1A28 167.9%);
+
+
+
+        .content {
+            color: #83C2CC;
+            
+        }
+
+        .number {
+            color: #226571;
+        }
+
+        .twitter_logo {
+            svg {
+                path {
+                    fill: #83C2CC;
+                }
+            }
+        }
+
+        .btn-wrapper {
+            background-color: #226571;
+            .border {
+                display: none;
+                position: absolute;
+                z-index: -1;
+                margin-top: -0.1em;
+                margin-left: -0.2em;
+                width: 256px;
+                height: 37px;
+                border-radius: 4px;
+                overflow: hidden;
+                background: linear-gradient(to right, #226571 20%, #226571 40%, #91cdf0 50%, #91cdf0 55%, #226571 70%, #226571 100%);
+                background-size: 200% auto;
+                animation: shine 2.2s linear infinite;
+            }
+
+        }
+    }
+
+    .second {
+        margin: 0em 4em;
+
+    }
+
+    .third {
+        .number {
+            right: 4%;
+        }
+    }
+
+    .third {
+        margin-bottom: none;
+    }
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+
+.cards-articles-wrapper .card:hover {
+    .border {
+        display: block;
+    }
+}
+
+
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
+
+.slider__bullets {
+    display: flex;
+    justify-content: center;
+}
+.slider__bullet {
+    margin-top: 0.5em;
+    margin-right: 1em;
+    border: none;
+    background-color: #010101;
+    width: 10px;
+    height: 10px;
+    border-radius: 200px;
+   
+}
+
+.glide__bullet--active {
+    background: linear-gradient(153.77deg, #1C626C -9.67%, #0E1A28 167.9%);
+
+}
+
+
+
+@media only screen and (max-width: 1765px) {
+
+    .glide__slide {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 1310px) {
+    .main-section .text-hero {
+        text-align: center;
+    }
+    .main-section .img-crowd{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 885px) {
+    .searchbar {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .main-section .text-hero .latest {
+       margin-right: unset;
+    }
+
+    .lower-nav {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-section .text-hero .crowd-control {
+        font-size: 35px;
+    }
+
+    .main-section .text-hero .dec {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .main-section .text-hero {
+        padding: 2.8em 2.5em;
+    }
+}
+
+@media only screen and (max-width:1430px) {
+
+
+    .cards-articles-wrapper .second {
+        margin: 0 1em;
+        margin-bottom: 2em;
+    }
+    .card-wrapper {
+
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 1020) {
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1325px) {
+    .cards-articles-wrapper {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
