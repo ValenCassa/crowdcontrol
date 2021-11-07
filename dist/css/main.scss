@@ -570,3 +570,29 @@ header .lower-nav {
 
 
 }
+
+
+@media only screen and (max-width: 490px) {
+    .card {
+        transform: scale(0.85);
+    }
+    .cards-articles-wrapper .second {
+        margin: 0em 0em;
+    }
+
+    .card {
+        margin-bottom: -4em;
+
+        &:hover {
+            transform: unset;
+        }
+    }
+
+    .cards-articles-wrapper {
+
+        flex-direction: unset;
+
+    }
+
+
+}

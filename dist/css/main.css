@@ -743,4 +743,27 @@ header .lower-nav .more {
             align-items: center;
   }
 }
+
+@media only screen and (max-width: 490px) {
+  .card {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  .cards-articles-wrapper .second {
+    margin: 0em 0em;
+  }
+  .card {
+    margin-bottom: -4em;
+  }
+  .card:hover {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .cards-articles-wrapper {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
 /*# sourceMappingURL=main.css.map */
